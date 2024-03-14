@@ -94,3 +94,9 @@ text.setAttribute("style", "color: orange");
 // 8. add // remove
 const content = document.querySelector("p");
 content.classList.add("succes");
+
+const article = document.querySelector("article");
+console.log(article.children);
+Array.from(article.children).forEach((child) => {
+  child.classList.add("article-child");
+});
